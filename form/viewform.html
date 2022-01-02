@@ -1,0 +1,438 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <title>Pandimacminifire</title>
+
+    <style>
+        table {
+	        margin: auto;
+	        border-collapse: collapse;
+        }
+
+        table, th, td {
+	        border: 1px solid #cacaca;
+        }
+
+        td {
+            width: 16%;
+        }
+
+    </style>
+  </head>
+  <body>
+   
+    <script>
+      $(function() {
+        $("input:checkbox").on('click', function() {
+          // in the handler, 'this' refers to the box clicked on
+          var $box = $(this);
+          if ($box.is(":checked")) {
+            // the name of the box is retrieved using the .attr() method
+            // as it is assumed and expected to be immutable
+            var group = "input:checkbox[name='" + $box.attr("name") + "']";
+            // the checked state of the group/box on the other hand will change
+            // and the current value is retrieved using .prop() method
+            $(group).prop("checked", false);
+            $box.prop("checked", true);
+          } else {
+            $box.prop("checked", false);
+          }
+        });
+      });
+    </script>
+
+    <div>
+      <div class="text-center header-title top-title">
+        <p style="color: white;" class="text-center">PLEASE SUMBIT REAL DATA ONLY!</p>
+      </div>
+      <div class="container" style="padding: 30px;">
+        
+
+
+
+
+        <table>
+
+
+            <thead >
+                <tr >
+                    <td>
+                        <div class="text-center" >
+                            <img style="width: 50%;" src="./images/icon-breath.png" class="card-img-top" alt="..." style="display: block;">
+                        </div>
+                        <div class="text-padding text-center">
+                            <label style="color:#f00000;">DO YOU DIFFICULT TO BREATH?</label>
+                        </div>
+                    </td>
+                    <td >
+                        <div class="text-center" >
+                            <img style="width: 50%;" src="./images/icon-temperature.png" class="card-img-top" alt="..." style="display: block;">
+                        </div>
+                        <div class="text-padding text-center">
+                            <label class="text-center" for="" style="color: #ffc600;">WHAT IS YOUR TEMPERATURE?</label>
+                          </div>
+                    </td>
+                    <td>
+                        <div class="text-center">
+                            <img style="width: 50%;" src="./images/icon-headache.png" class="card-img-top" alt="...">
+                        </div>
+                        <div class="text-padding text-center">
+                            <label class="text-center" for="" style="color: #05c700;">DO YOU HAVE A HEADACHE?</label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="text-center">
+                            <img style="width: 50%;" src="./images/icon-cough.png" class="card-img-top" alt="...">
+                        </div>
+                        <div class="text-padding text-center">
+                            <label class="text-center" for="" style="color: #0077f0;">DO YOU HAVE A COUGTH?</label>
+                          </div>
+                    </td>
+                    <td >
+                        <div class="text-center">
+                            <img style="width: 50%; height: 100%;" src="./images/icon-touch.png" class="card-img-top" alt="...">
+                        </div>
+                        <div class="text-padding text-center">
+                            <label class="text-center" for="" style="color: #0077f0;">HAVE YOU EVER TOUCHED A PATIENT?</label>
+                          </div>
+                    </td>
+                    <td>
+                        <div class="text-center">
+                            <img style="width: 50%;" src="./images/icon-crowdy.png" class="card-img-top" alt="...">
+                        </div>
+                        <div class="text-padding text-center">
+                            <label class="text-center" for="" style="color: #bb00f5;">HAVE YOU EVER BEEN TO AN INFETCHED SITE?</label>
+                          </div>
+                    </td>
+                </tr>
+    
+            </thead>
+
+          <tbody class="" style="background : #f6f6f6">
+            <tr>
+              <td>
+                  
+                <div class="card-body">
+                    <span class="span-margin">
+                      <input type="checkbox" class="" id="breathId1" name="breath" value="1" style="margin: 8px;"> <span class="checkbox-custom rectangular"></span>
+                      <label class="" for="breathId1" >YES</label>
+                    </span>
+                    <span class="span-margin">
+                      <input type="checkbox" class="" id="breathId2" name="breath" value="0" style="margin: 8px;">
+                      <label class="" for="breathId2" >NO</label>
+                    </span>   
+                  </div>
+
+              </td>
+              <td>
+                <div class="card-body">
+                    <span class="span-margin">
+                      <input type="checkbox" class="" id="temperatureId1" name="temperature">
+                      <label for="temperatureId1">YES</label>
+                    </span>
+                    <span class="span-margin">
+                      <input type="checkbox" class="" id="temperatureId2" name="temperature">
+                      <label  for="temperatureId2">NO</label>
+                    </span>   
+                  </div>
+              </td>
+
+              <td>
+                <div class="card-body">
+                    <span class="span-margin">
+                      <input type="checkbox" class="" id="headacheId1" name="headache">
+                    <label class="" for="headacheId1">YES</label>
+                    </span>
+                    <span class="span-margin">
+                      <input type="checkbox" class="" id="headacheId2" name="headache">
+                    <label class="" for="headacheId2">NO</label>
+                    </span>   
+                  </div>
+              </td>
+              <td>
+                <div class="card-body">
+                    <span class="span-margin">
+                      <input type="checkbox" class="" id="coughtId1" name="cought">
+                      <label class="" for="coughtId1">YES</label>
+                    </span>
+                    <span class="span-margin">
+                      <input type="checkbox" class="" id="coughtId2" name="cought">
+                      <label class="" for="coughtId2">NO</label>
+                    </span>   
+                  </div>
+              </td>
+              <td>
+                <div class="card-body">
+                    <span class="span-margin">
+                      <input type="checkbox" class="" id="touchId1" name="touch">
+                      <label class="" for="coughtId1">YES</label>
+                    </span>
+                    <span class="span-margin">
+                      <input type="checkbox" class="" id="touchId2" name="touch">
+                      <label class="" for="coughtId2">NO</label>
+                    </span>   
+                  </div>
+              </td>
+              <td>
+                <div class="card-body">
+                    <span class="span-margin">
+                      <input type="checkbox" class="" id="infetchedId1" name="infetched">
+                    <label class="" for="infetchedId1">YES</label>
+                    </span>
+                    <span class="span-margin">
+                      <input type="checkbox" class="" id="infetchedId2" name="infetched">
+                      <label class="" for="infetchedId2">NO</label>
+                    </span>   
+                  </div>
+              </td>
+            </tr>
+            <tr>
+                <td>
+                    
+                  <div class="card-body">
+                      <span class="span-margin">
+                        <input type="checkbox" class="" id="breathId1" name="breath" value="1" style="margin: 8px;"> <span class="checkbox-custom rectangular"></span>
+                        <label class="" for="breathId1" >YES</label>
+                      </span>
+                      <span class="span-margin">
+                        <input type="checkbox" class="" id="breathId2" name="breath" value="0" style="margin: 8px;">
+                        <label class="" for="breathId2" >NO</label>
+                      </span>   
+                    </div>
+  
+                </td>
+                <td>
+                  <div class="card-body">
+                      <span class="span-margin">
+                        <input type="checkbox" class="" id="temperatureId1" name="temperature">
+                        <label for="temperatureId1">YES</label>
+                      </span>
+                      <span class="span-margin">
+                        <input type="checkbox" class="" id="temperatureId2" name="temperature">
+                        <label  for="temperatureId2">NO</label>
+                      </span>   
+                    </div>
+                </td>
+  
+                <td>
+                  <div class="card-body">
+                      <span class="span-margin">
+                        <input type="checkbox" class="" id="headacheId1" name="headache">
+                      <label class="" for="headacheId1">YES</label>
+                      </span>
+                      <span class="span-margin">
+                        <input type="checkbox" class="" id="headacheId2" name="headache">
+                      <label class="" for="headacheId2">NO</label>
+                      </span>   
+                    </div>
+                </td>
+                <td>
+                  <div class="card-body">
+                      <span class="span-margin">
+                        <input type="checkbox" class="" id="coughtId1" name="cought">
+                        <label class="" for="coughtId1">YES</label>
+                      </span>
+                      <span class="span-margin">
+                        <input type="checkbox" class="" id="coughtId2" name="cought">
+                        <label class="" for="coughtId2">NO</label>
+                      </span>   
+                    </div>
+                </td>
+                <td>
+                  <div class="card-body">
+                      <span class="span-margin">
+                        <input type="checkbox" class="" id="touchId1" name="touch">
+                        <label class="" for="coughtId1">YES</label>
+                      </span>
+                      <span class="span-margin">
+                        <input type="checkbox" class="" id="touchId2" name="touch">
+                        <label class="" for="coughtId2">NO</label>
+                      </span>   
+                    </div>
+                </td>
+                <td>
+                  <div class="card-body">
+                      <span class="span-margin">
+                        <input type="checkbox" class="" id="infetchedId1" name="infetched">
+                      <label class="" for="infetchedId1">YES</label>
+                      </span>
+                      <span class="span-margin">
+                        <input type="checkbox" class="" id="infetchedId2" name="infetched">
+                        <label class="" for="infetchedId2">NO</label>
+                      </span>   
+                    </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                    
+                  <div class="card-body">
+                      <span class="span-margin">
+                        <input type="checkbox" class="" id="breathId1" name="breath" value="1" style="margin: 8px;"> <span class="checkbox-custom rectangular"></span>
+                        <label class="" for="breathId1" >YES</label>
+                      </span>
+                      <span class="span-margin">
+                        <input type="checkbox" class="" id="breathId2" name="breath" value="0" style="margin: 8px;">
+                        <label class="" for="breathId2" >NO</label>
+                      </span>   
+                    </div>
+  
+                </td>
+                <td>
+                  <div class="card-body">
+                      <span class="span-margin">
+                        <input type="checkbox" class="" id="temperatureId1" name="temperature">
+                        <label for="temperatureId1">YES</label>
+                      </span>
+                      <span class="span-margin">
+                        <input type="checkbox" class="" id="temperatureId2" name="temperature">
+                        <label  for="temperatureId2">NO</label>
+                      </span>   
+                    </div>
+                </td>
+  
+                <td>
+                  <div class="card-body">
+                      <span class="span-margin">
+                        <input type="checkbox" class="" id="headacheId1" name="headache">
+                      <label class="" for="headacheId1">YES</label>
+                      </span>
+                      <span class="span-margin">
+                        <input type="checkbox" class="" id="headacheId2" name="headache">
+                      <label class="" for="headacheId2">NO</label>
+                      </span>   
+                    </div>
+                </td>
+                <td>
+                  <div class="card-body">
+                      <span class="span-margin">
+                        <input type="checkbox" class="" id="coughtId1" name="cought">
+                        <label class="" for="coughtId1">YES</label>
+                      </span>
+                      <span class="span-margin">
+                        <input type="checkbox" class="" id="coughtId2" name="cought">
+                        <label class="" for="coughtId2">NO</label>
+                      </span>   
+                    </div>
+                </td>
+                <td>
+                  <div class="card-body">
+                      <span class="span-margin">
+                        <input type="checkbox" class="" id="touchId1" name="touch">
+                        <label class="" for="coughtId1">YES</label>
+                      </span>
+                      <span class="span-margin">
+                        <input type="checkbox" class="" id="touchId2" name="touch">
+                        <label class="" for="coughtId2">NO</label>
+                      </span>   
+                    </div>
+                </td>
+                <td>
+                  <div class="card-body">
+                      <span class="span-margin">
+                        <input type="checkbox" class="" id="infetchedId1" name="infetched">
+                      <label class="" for="infetchedId1">YES</label>
+                      </span>
+                      <span class="span-margin">
+                        <input type="checkbox" class="" id="infetchedId2" name="infetched">
+                        <label class="" for="infetchedId2">NO</label>
+                      </span>   
+                    </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                    
+                  <div class="card-body">
+                      <span class="span-margin">
+                        <input type="checkbox" class="" id="breathId1" name="breath" value="1" style="margin: 8px;"> <span class="checkbox-custom rectangular"></span>
+                        <label class="" for="breathId1" >YES</label>
+                      </span>
+                      <span class="span-margin">
+                        <input type="checkbox" class="" id="breathId2" name="breath" value="0" style="margin: 8px;">
+                        <label class="" for="breathId2" >NO</label>
+                      </span>   
+                    </div>
+  
+                </td>
+                <td>
+                  <div class="card-body">
+                      <span class="span-margin">
+                        <input type="checkbox" class="" id="temperatureId1" name="temperature">
+                        <label for="temperatureId1">YES</label>
+                      </span>
+                      <span class="span-margin">
+                        <input type="checkbox" class="" id="temperatureId2" name="temperature">
+                        <label  for="temperatureId2">NO</label>
+                      </span>   
+                    </div>
+                </td>
+  
+                <td>
+                  <div class="card-body">
+                      <span class="span-margin">
+                        <input type="checkbox" class="" id="headacheId1" name="headache">
+                      <label class="" for="headacheId1">YES</label>
+                      </span>
+                      <span class="span-margin">
+                        <input type="checkbox" class="" id="headacheId2" name="headache">
+                      <label class="" for="headacheId2">NO</label>
+                      </span>   
+                    </div>
+                </td>
+                <td>
+                  <div class="card-body">
+                      <span class="span-margin">
+                        <input type="checkbox" class="" id="coughtId1" name="cought">
+                        <label class="" for="coughtId1">YES</label>
+                      </span>
+                      <span class="span-margin">
+                        <input type="checkbox" class="" id="coughtId2" name="cought">
+                        <label class="" for="coughtId2">NO</label>
+                      </span>   
+                    </div>
+                </td>
+                <td>
+                  <div class="card-body">
+                      <span class="span-margin">
+                        <input type="checkbox" class="" id="touchId1" name="touch">
+                        <label class="" for="coughtId1">YES</label>
+                      </span>
+                      <span class="span-margin">
+                        <input type="checkbox" class="" id="touchId2" name="touch">
+                        <label class="" for="coughtId2">NO</label>
+                      </span>   
+                    </div>
+                </td>
+                <td>
+                  <div class="card-body">
+                      <span class="span-margin">
+                        <input type="checkbox" class="" id="infetchedId1" name="infetched">
+                      <label class="" for="infetchedId1">YES</label>
+                      </span>
+                      <span class="span-margin">
+                        <input type="checkbox" class="" id="infetchedId2" name="infetched">
+                        <label class="" for="infetchedId2">NO</label>
+                      </span>   
+                    </div>
+                </td>
+              </tr>
+
+          </tbody>
+        </table>
+
+
+  </div>
+    </div>
+  </body>
+</html>
+
+

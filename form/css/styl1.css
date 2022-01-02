@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+.container {
+	margin: auto;
+}
+
+.text-center  {
+	text-align: center;
+}
+.box-border{
+	border: solid 1px #cacaca;
+	padding: 16px;
+}
+.none-border-right {
+	border-left: solid 1px #cacaca; ;
+	border-top: solid 1px #cacaca;
+	border-bottom: solid 1px #cacaca;
+	padding: 18px;
+}
+
+.top-title {
+	width: 100%; 
+	height: 60px; 
+	background-color: #f00000; 
+	padding-top: 5px;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+.span-margin {
+	margin: 10px;
+}
+
+.header-title {
+	
+	height: 60px;
+	width: 100%;
+	background-color: red;
+}
+
+table {
+	margin: auto;
+}
+
+
+.card-body {
+	padding: 10px;
+}
+
+.card-img-top {
+
+}
+*, *:before, *:after {
+	box-sizing: border-box;
+	outline: none;
+  }
+  
+  
+  
+  .hide {
+	display: none;
+  }
+  
+  .button {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 12.5rem;
+	margin: auto;
+	padding: 1.5rem 3.125rem;
+	background-color: #3498db;
+	border: none;
+	border-radius: 0.3125rem;
+	box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.2);
+	color: white;
+	font-weight: 300;
+	text-transform: uppercase;
+	overflow: hidden;
+  }
+  .button:before {
+	position: absolute;
+	content: '';
+	bottom: 0;
+	left: 0;
+	width: 0%;
+	height: 100%;
+	background-color: #54d98c;
+  }
+  .button span {
+	position: absolute;
+	line-height: 0;
+  }
+  .button span i {
+	transform-origin: center center;
+  }
+  .button span:nth-of-type(1) {
+	top: 50%;
+	transform: translateY(-50%);
+  }
+  .button span:nth-of-type(2) {
+	top: 100%;
+	transform: translateY(0%);
+	font-size: 24px;
+  }
+  .button span:nth-of-type(3) {
+	display: none;
+  }
+
+  .text-field {
+	  margin-top: 20px;
+	  width: 80%;
+	  height: 30px;
+	  border: 1px solid #cacaca;
+	  border-radius: 15px;
+  }
+
+
+  .text-padding {
+	  padding: 10px;
+  }
+
+  .box-header {
+	  height: 50%;
+	  background-color: saddlebrown;
+  }
